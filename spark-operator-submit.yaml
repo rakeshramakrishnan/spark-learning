@@ -1,14 +1,14 @@
 apiVersion: "sparkoperator.k8s.io/v1beta2"
 kind: SparkApplication
 metadata:
-  name: spark-streaming-tcp-word-count
+  name: spark-streaming-kafka-word-count
   namespace: default
 spec:
   type: Java
   mode: cluster
   image: "sample-spark-job-image"
   imagePullPolicy: IfNotPresent
-  mainClass: spark.examples.streaming.TCPSocketWordCount
+  mainClass: spark.examples.streaming.KafkaWordCount
   mainApplicationFile: "local:///opt/spark/custom-spark-job/sample-spark-job.jar"
   sparkVersion: "2.4.5"
   restartPolicy:
