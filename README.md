@@ -33,3 +33,8 @@ kubectl describe sparkapplication spark-pi-custom
 ```
 kubectl delete sparkapplication spark-pi-custom
 ```
+
+# Delete spark operator
+```
+helm del spark --purge
+```
