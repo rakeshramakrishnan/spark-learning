@@ -38,3 +38,19 @@ kubectl delete sparkapplication spark-pi-custom
 ```
 helm del spark --purge
 ```
+
+# Kafka on k8
+## Helm chart
+```
+helm install --name kafka bitnami/kafka --set deleteTopicEnable=true
+```
+
+## Kafka producer
+```
+kubectl exec -ti kafka-0 -- kafka-console-producer.sh --topic word-count-input --broker-list localhost:9092
+```
+
+## Kafka consumer
+```
+kubectl exec -ti kafka-0 -- kafka-console-consumer.sh --topic word-count-input --bootstrap-server localhost:9092
+```
