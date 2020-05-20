@@ -1,14 +1,14 @@
 apiVersion: "sparkoperator.k8s.io/v1beta2"
 kind: SparkApplication
 metadata:
-  name: spark-streaming-kafka-word-count
+  name: spark-streaming-recoverable-kafka-word-count
   namespace: default
 spec:
   type: Java
   mode: cluster
   image: "sample-spark-job-image"
   imagePullPolicy: IfNotPresent
-  mainClass: spark.examples.streaming.KafkaWordCount
+  mainClass: spark.examples.streaming.RecoverableKafkaWordCount
   mainApplicationFile: "local:///opt/spark/custom-spark-job/sample-spark-job.jar"
   sparkVersion: "2.4.5"
   restartPolicy:
@@ -18,6 +18,9 @@ spec:
       hostPath:
         path: "/tmp"
         type: Directory
+    - name: spark-data
+      persistentVolumeClaim:
+        claimName: spark-pv-claim
   driver:
     cores: 1
     coreLimit: "1200m"
@@ -34,5 +37,5 @@ spec:
     labels:
       version: 2.4.5
     volumeMounts:
-      - name: "test-volume"
-        mountPath: "/tmp"
+      - name: spark-data
+        mountPath: "/data"
