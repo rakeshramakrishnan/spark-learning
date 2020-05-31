@@ -4,7 +4,7 @@ Assuming that local kubernetes is running, along with tiller
 # Setup spark operator
 ```
 $ helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
-$ helm install --name spark incubator/sparkoperator --set sparkJobNamespace=default
+$ helm install --name spark incubator/sparkoperator --set sparkJobNamespace=default --set enableWebhook=true --set webhookPort=443 
 ```
 
 # Build local project into docker image
