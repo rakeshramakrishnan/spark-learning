@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="java-pi-estimation" type="SparkSubmitConfigurationType" factoryName="SparkJobConfigurationType" show_console_on_std_err="false" show_console_on_std_out="false">
+  <configuration default="false" name="java-examples" type="SparkSubmitConfigurationType" factoryName="SparkJobConfigurationType" show_console_on_std_err="false" show_console_on_std_out="false">
     <option name="allowRunningInParallel" value="false" />
     <option name="archives">
       <list />
@@ -11,7 +11,7 @@
         <option name="type" value="FILE" />
       </FilePath>
     </option>
-    <option name="className" value="spark.examples.computation.PiEstimation" />
+    <option name="className" value="spark.examples.introduction.DataFrameExample1" />
     <option name="clusterManager" value="LOCAL" />
     <option name="conf" value="" />
     <option name="deployMode" value="CLIENT" />
@@ -59,7 +59,7 @@
     <option name="repositories" value="" />
     <option name="shellExecutor" value="/bin/bash" />
     <option name="sparkHome" value="$PROJECT_DIR$/../spark/spark-3.0.1-bin-hadoop2.7" />
-    <option name="sparkMonitoringDriverId" value="" />
+    <option name="sparkMonitoringDriverId" value="Spark monitoring connection@SparkMonitoringConnections@1802360841282764884" />
     <option name="supervise" value="false" />
     <option name="totalExecutorCores" value="" />
     <option name="verbose" value="false" />
