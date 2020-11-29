@@ -1,0 +1,70 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="java-pi-estimation" type="SparkSubmitConfigurationType" factoryName="SparkJobConfigurationType" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="allowRunningInParallel" value="false" />
+    <option name="archives">
+      <list />
+    </option>
+    <option name="artifactArgs" value="" />
+    <option name="artifactPath">
+      <FilePath>
+        <option name="path" value="$PROJECT_DIR$/build/libs/sample-spark-job-1.0-SNAPSHOT.jar" />
+        <option name="type" value="FILE" />
+      </FilePath>
+    </option>
+    <option name="className" value="spark.examples.computation.PiEstimation" />
+    <option name="clusterManager" value="LOCAL" />
+    <option name="conf" value="" />
+    <option name="deployMode" value="CLIENT" />
+    <option name="driverClassPath">
+      <list />
+    </option>
+    <option name="driverCores" value="1" />
+    <option name="driverJavaOptions" value="" />
+    <option name="driverLibraryPath">
+      <list />
+    </option>
+    <option name="driverMemory" value="1024M" />
+    <option name="envParams" value="" />
+    <option name="excludePackages" value="" />
+    <option name="executorCores" value="" />
+    <option name="executorMemory" value="1G" />
+    <option name="files">
+      <list />
+    </option>
+    <option name="interactive" value="false" />
+    <option name="jars">
+      <list />
+    </option>
+    <option name="keytab">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="FILE" />
+      </FilePath>
+    </option>
+    <option name="master" value="local[4]" />
+    <option name="numExecutors" value="" />
+    <option name="packages" value="" />
+    <option name="principal" value="" />
+    <option name="propertiesFile">
+      <FilePath>
+        <option name="path" value="" />
+        <option name="type" value="FILE" />
+      </FilePath>
+    </option>
+    <option name="proxyUser" value="" />
+    <option name="pyFiles">
+      <list />
+    </option>
+    <option name="queue" value="" />
+    <option name="repositories" value="" />
+    <option name="shellExecutor" value="/bin/bash" />
+    <option name="sparkHome" value="$PROJECT_DIR$/../spark/spark-3.0.1-bin-hadoop2.7" />
+    <option name="sparkMonitoringDriverId" value="" />
+    <option name="supervise" value="false" />
+    <option name="totalExecutorCores" value="" />
+    <option name="verbose" value="false" />
+    <method v="2">
+      <option name="BuildArtifacts" enabled="true" />
+    </method>
+  </configuration>
+</component>
